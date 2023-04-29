@@ -5,7 +5,7 @@
         <style>
           body {
             width:500px;
-            margin:4% auto;
+            margin:4% ;
             letter-spacing:5px;
             font-size: 1.7em;
             -webkit-user-select: none;
@@ -65,6 +65,7 @@
           .numbers div{
             display: inline-block;
             background-color: #aaa;
+            text-align: center;
             border-radius: 1px;
             width:80px;
             padding:10px;
@@ -75,8 +76,42 @@
           .numbers div:hover{
             background-color: #aaa;
             border-radius: 100%;
-            text-align: center;
+            
           }
+
+          .numbers div:active{
+            font-weight:bold;
+          }
+          .side{
+            display: flex;
+            margin: 0px 0px 0px 0px;
+            align-items: center;
+          }
+          .equal{
+            display: inline-block;
+            border: 1px solid #3079ED;
+            border-radius: 1px;
+            width: 17%;
+            text-align: center;
+            padding: 119px 10px;
+            margin: 10px 0px 0px 10px ;
+            vertical-align: top;
+            cursor: pointer;
+            color: #FFF;
+            background-color: #4d90fe;
+            transition: all .2s ease-in-out;
+          }
+          div.equal:hover {
+            background-color: #307CF9;
+            -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+
+          }
+          div.equal:active {
+            font-weight: bold;
+          }
+
 
         </style>
     </head>
@@ -90,33 +125,35 @@
                     <div>*</div>
                     <div>/</div>
                 </div>
+                <div class="side">
+                    <div class="leftPanel">
 
-                <div class="leftPanel">
+                        <div class="numbers">
+                            <div>7</div>
+                            <div>8</div>
+                            <div>9</div>        
+                        </div>
 
-                    <div class="numbers">
-                        <div>7</div>
-                        <div>8</div>
-                        <div>9</div>        
+                        <div class="numbers">
+                            <div>4</div>
+                            <div>5</div>
+                            <div>6</div>            
+                        </div>
+
+                        <div class="numbers">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>            
+                        </div>
+
+                        <div class="numbers">
+                            <div>.</div>
+                            <div>0</div>
+                            <div>C</div>            
+                        </div>
+
                     </div>
-
-                    <div class="numbers">
-                        <div>4</div>
-                        <div>5</div>
-                        <div>6</div>            
-                    </div>
-
-                    <div class="numbers">
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>            
-                    </div>
-
-                    <div class="numbers">
-                        <div>.</div>
-                        <div>0</div>
-                        <div>C</div>            
-                    </div>
-
+                    <div class="equal" id="result">=</div>
                 </div>
             </div>
         </div>
