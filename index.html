@@ -24,6 +24,58 @@
             height: 60px;
             padding-right: 15px;
             padding-top: 10px;
+            text-align:right;
+            font-size: 2.5em;
+            margin-right: 6px;
+            overflow-x:auto;
+            transition:all .3 ease-in-out;
+          }
+          .input:hover{
+            border:1px solid #bbb;
+          }
+
+          .button{}
+          .operator{}
+
+          .operator div{
+            display: inline-block;
+            background-color: #aaa;
+            border-radius: 1px;
+            width:80px;
+            text-align: center;
+            padding:10px;
+            margin: 20px 4px 10px 0px;
+            cursor: pointer;
+            
+            transition: border-color 0.3 ease-in-out,basckground-color 0.2, box-shadow .2s;
+          }
+
+          .operator div:hover{
+            border-radius: 100%;
+            background-color:#aaa;
+            
+          }
+          .operator div:active{
+            font-weight: bold;
+          }
+
+          .leftpanel{
+            display:inline-block
+          }
+          .numbers div{
+            display: inline-block;
+            background-color: #aaa;
+            border-radius: 1px;
+            width:80px;
+            padding:10px;
+            margin:10px 4px 10px 0px;
+            cursor: pointer;
+            transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+          }
+          .numbers div:hover{
+            background-color: #aaa;
+            border-radius: 100%;
+            text-align: center;
           }
 
         </style>
@@ -41,25 +93,25 @@
 
                 <div class="leftPanel">
 
-                    <div>
+                    <div class="numbers">
                         <div>7</div>
                         <div>8</div>
                         <div>9</div>        
                     </div>
 
-                    <div>
+                    <div class="numbers">
                         <div>4</div>
                         <div>5</div>
                         <div>6</div>            
                     </div>
 
-                    <div>
+                    <div class="numbers">
                         <div>1</div>
                         <div>2</div>
                         <div>3</div>            
                     </div>
 
-                    <div>
+                    <div class="numbers">
                         <div>.</div>
                         <div>0</div>
                         <div>C</div>            
